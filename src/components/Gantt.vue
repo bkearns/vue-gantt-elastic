@@ -7,7 +7,6 @@
       @options-changed="optionsUpdate"
       @dynamic-style-changed="styleUpdate"
     >
-      <gantt-header slot="header"></gantt-header>
     </gantt-elastic>
     <div class="q-mt-md" />
     <q-btn @click="addTask" icon="mdi-plus" label="Add task" />
@@ -19,7 +18,6 @@
 
 <script>
 import GanttElastic from "gantt-elastic";
-import GanttHeader from "gantt-elastic-header";
 import dayjs from "dayjs";
 
 // just helper to get current dates
@@ -334,7 +332,6 @@ export default {
   name: "Gantt",
   components: {
     GanttElastic,
-    GanttHeader
   },
   data() {
     return {
